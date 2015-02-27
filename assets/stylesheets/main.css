@@ -123,6 +123,18 @@ body {
 
 /*
   ========================================
+  Rows
+  ========================================
+*/
+
+.row{
+    background: white;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+}
+
+/*
+  ========================================
   Primary header
   ========================================
 */
@@ -156,6 +168,15 @@ body {
   ========================================
 */
 
+.nav li{
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.nav li:last-child{
+    margin-right: 0;
+}
 .nav {
     text-align: right;
 }
@@ -219,6 +240,15 @@ p a {
     border-bottom: 1px solid #dfe2e5;
 }
 
+.primary-header a,
+.primary-footer a {
+    color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+    color: #648880;
+}
+
 /*
   ========================================
   Buttons
@@ -227,14 +257,23 @@ p a {
 
 .btn {
     border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
     display: inline-block;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin: 0;
+    text-transform: uppercase;
 }
 .btn-alt {
-    border: 1px solid #dfe2e5;
+    border: 1px solid #fff;
     padding: 10px 30px;
 }
 
+.btn-alt:hover{
+    background: #fff;
+    color: #648880;
+}
 /*
   ========================================
   Home
@@ -242,6 +281,7 @@ p a {
 */
 
 .hero {
+    color: #fff;
     line-height: 44px;
     padding: 22px 80px 66px 80px;
     text-align: center;
@@ -272,4 +312,22 @@ p a {
 .primary-footer small {
     float: left;
     font-weight: 400;
+}
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+
+.speaker-info {
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+    margin-top: 88px;
+    padding: 22px 0;
+    text-align: center;
+}
+
+.speaker{
+    margin-bottom: 44px;
 }
